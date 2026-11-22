@@ -50,7 +50,7 @@ class GodotAndroidPlugin(godot: Godot) : GodotPlugin(godot) {
             }
             override fun onSurfaceTextureUpdated(st: SurfaceTexture) {}
         }
-        root.addView(view, 0, FrameLayout.LayoutParams(-1,-1))
+        root.addView(view, FrameLayout.LayoutParams(-1, -1))
         videoView = view
         if (view.isAvailable) initMediaPlayer()
     }
